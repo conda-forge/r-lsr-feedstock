@@ -1,4 +1,4 @@
-{% set version = '0.5' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lsr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lsr/lsr_{{ version }}.tar.gz
-  sha256: 6e000bf3a5f1a7c27f6ebea8fc15b2c4a673f812dda54a852128a680872a6860
+  sha256: f6d341fbe14875a3dc8950c4759bedbab0903a112c585ea94a2773a48fe7a3ef
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,13 +38,10 @@ test:
 about:
   home: http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/
   license: GPL-3
-  summary: 'A collection of tools intended to make introductory statistics easier to teach, including
-    wrappers for common hypothesis tests and basic data manipulation. It accompanies
-    Navarro, D. J. (2015). Learning Statistics with R: A Tutorial for Psychology Students
-    and Other Beginners, Version 0.5. [Lecture notes] School of Psychology, University
-    of Adelaide, Adelaide, Australia. ISBN: 978-1-326-18972-3. URL: http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/.'
+  summary: 'A collection of tools intended to make introductory statistics easier to teach, including wrappers for common hypothesis tests and basic data manipulation. It accompanies Navarro, D. J. (2015). Learning Statistics with R: A Tutorial for Psychology Students and Other Beginners, Version 0.5. [Lecture notes] School
+    of Psychology, University of Adelaide, Adelaide, Australia. ISBN: 978-1-326-18972-3. URL: http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
