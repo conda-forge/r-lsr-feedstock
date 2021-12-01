@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lsr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lsr/lsr_{{ version }}.tar.gz
-  sha256: f6d341fbe14875a3dc8950c4759bedbab0903a112c585ea94a2773a48fe7a3ef
+  sha256: a9ff0b51cdda26b46980a6090d552b24c5e6259b9001629066fd4c7214b5ab02
 
 build:
   noarch: generic
