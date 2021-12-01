@@ -21,7 +21,6 @@ build:
     - lib/
 
 requirements:
-  build:
   host:
     - r-base
   run:
