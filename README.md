@@ -1,11 +1,11 @@
-About r-lsr
-===========
+About r-lsr-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lsr-feedstock/blob/main/LICENSE.txt)
 
 Home: http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lsr-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of tools intended to make introductory statistics easier to teach, including wrappers for common hypothesis tests and basic data manipulation. It accompanies Navarro, D. J. (2015). Learning Statistics with R: A Tutorial for Psychology Students and Other Beginners, Version 0.5. [Lecture notes] School of Psychology, University of Adelaide, Adelaide, Australia. ISBN: 978-1-326-18972-3. URL: http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/.
 
