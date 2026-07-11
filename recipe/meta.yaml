@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lsr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lsr/lsr_{{ version }}.tar.gz
-  sha256: a9ff0b51cdda26b46980a6090d552b24c5e6259b9001629066fd4c7214b5ab02
+  sha256: af1c1cf38c20428f0ecada7f8976039266022180523a7569b88575a165f459b1
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
